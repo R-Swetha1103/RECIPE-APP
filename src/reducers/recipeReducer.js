@@ -1,7 +1,4 @@
-// src/reducers/recipeReducer.js
 import { FETCH_RECIPES, SET_FAVORITE } from '../actions/recipeActions';
-
-// src/reducers/recipeReducer.js
 
 const initialState = {
   recipes: [],

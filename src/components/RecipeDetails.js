@@ -1,4 +1,3 @@
-// src/components/RecipeDetails.js
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -12,16 +11,16 @@ const RecipeDetails = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch the recipes if they are not already in state
+    
     if (!recipe) {
       dispatch(fetchRecipes(''));
     } else {
-      // Set a timer for 2 seconds to simulate GIF loading
+      
       const timer = setTimeout(() => {
         setLoading(false);
       }, 2000);
       
-      return () => clearTimeout(timer); // Clean up timer on component unmount
+      return () => clearTimeout(timer); 
     }
   }, [dispatch, recipe]);
 
@@ -29,24 +28,24 @@ const RecipeDetails = () => {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#00203F' }}>
         <img src="https://media.tenor.com/7qFULBHgzlYAAAAj/bubu-cooking-dudu-bubu.gif" alt="Loading" />
-        <p style={{ marginTop: '20px', fontSize: '1.5rem', color: '#FFFFFF' }}>Loading...</p> {/* Loading Text */}
+        <p style={{ marginTop: '20px', fontSize: '1.5rem', color: '#FFFFFF' }}>Loading...</p> 
       </div>
     );
   }
 
   if (!recipe) {
-    return <div>Loading...</div>; // Fallback in case recipe is not found
+    return <div>Loading...</div>; 
   }
 
   return (
     <div style={{ padding: '20px', maxWidth: '90%', margin: 'auto', backgroundColor: '#00203F', minHeight: '100vh' }}>
-      {/* Navigation Icons */}
+      
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px', color: '#FFFFFF' }}>
         <Link to="/recipes" style={{ textDecoration: 'none' }}>
-          <i className="fas fa-arrow-left" style={{ fontSize: '24px', color: '#FFFFFF' }}></i> {/* Back Icon */}
+          <i className="fas fa-arrow-left" style={{ fontSize: '24px', color: '#FFFFFF' }}></i> 
         </Link>
         <Link to="/" style={{ textDecoration: 'none' }}>
-          <i className="fas fa-home" style={{ fontSize: '24px', color: '#FFFFFF' }}></i> {/* Home Icon */}
+          <i className="fas fa-home" style={{ fontSize: '24px', color: '#FFFFFF' }}></i> 
         </Link>
       </div>
       

@@ -1,4 +1,3 @@
-// src/components/Home.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -44,9 +43,9 @@ const Home = ({ onShowSearch, showSearch }) => {
           padding: '10px 20px',
           fontSize: '16px',
           zIndex: 2,
-          backgroundColor: '#D9534F', // Change this to your preferred color
-          border: '1px solid #C0392B', // Darker version for border
-          color: '#FFFFFF', // Text color, white for better contrast
+          backgroundColor: '#D9534F', 
+          border: '1px solid #C0392B', 
+          color: '#FFFFFF', 
         }}
       >
         Let's search for the recipe

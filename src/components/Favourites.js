@@ -1,20 +1,19 @@
-// src/components/Favourites.js
 
-import React, { useState, useEffect } from 'react'; // Import useState and useEffect
+import React, { useState, useEffect } from 'react'; 
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 const Favourites = () => {
   const { favorites } = useSelector((state) => state.recipes);
-  const [loading, setLoading] = useState(true); // Initialize loading state
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
-    // Simulate loading delay
+    
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds delay
+    }, 2000); 
 
-    return () => clearTimeout(timer); // Clean up
+    return () => clearTimeout(timer); 
   }, []);
 
   if (loading) {
@@ -28,13 +27,13 @@ const Favourites = () => {
 
   return (
     <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', backgroundColor: '#00203F', minHeight: '100vh' }}>
-      {/* Navigation Icons */}
+      
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px', width: '100%', maxWidth: '400px' }}>
         <Link to="/recipes" style={{ textDecoration: 'none' }}>
-          <i className="fas fa-arrow-left" style={{ fontSize: '24px', color: '#FFFFFF' }}></i> {/* Back Icon */}
+          <i className="fas fa-arrow-left" style={{ fontSize: '24px', color: '#FFFFFF' }}></i> 
         </Link>
         <Link to="/" style={{ textDecoration: 'none' }}>
-          <i className="fas fa-home" style={{ fontSize: '24px', color: '#FFFFFF' }}></i> {/* Home Icon */}
+          <i className="fas fa-home" style={{ fontSize: '24px', color: '#FFFFFF' }}></i> 
         </Link>
       </div>
       

@@ -36,18 +36,18 @@
     transform: rotate(360deg);
   }
 }
-/* src/App.css */
+
 @media screen and (max-width: 600px) {
   h2 {
-    font-size: 1.25rem; /* Reduce header size on mobile */
+    font-size: 1.25rem; 
   }
   
   ul {
-    padding-left: 20px; /* Padding for lists */
+    padding-left: 20px; 
   }
 
   img {
-    border-radius: 5px; /* Ensure images have responsive border */
+    border-radius: 5px; 
   }
 }
 

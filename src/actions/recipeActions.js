@@ -1,4 +1,3 @@
-// src/actions/recipeActions.js
 import axios from 'axios';
 
 export const FETCH_RECIPES = 'FETCH_RECIPES';

@@ -52,7 +52,8 @@ The application features a clean and modern design with:
 - React: A JavaScript library for building user interfaces.
 - Redux: A predictable state container for managing the app's state.
 - React Router: For routing and navigation between pages.
+- Axios: For making API calls to fetch data.
 - CSS & Inline Styles: Used for styling components.
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
