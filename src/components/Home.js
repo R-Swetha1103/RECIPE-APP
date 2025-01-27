@@ -33,7 +33,7 @@ const Home = ({ onShowSearch, showSearch }) => {
           zIndex: 2,
         }}
       />
-      <h1 style={{ fontFamily: 'Lobster, cursive', fontSize: '48px', marginBottom: '10px', color: '#4B3D3D' }}>Delicious Recipe</h1> {/* Dark color */}
+      <h1 style={{ fontFamily: 'Lobster, cursive', fontSize: '48px', marginBottom: '10px', color: '#001F3F' }}>Delicious Recipe</h1> {/* Dark color */}
       <p style={{ fontSize: '18px', marginBottom: '20px', color: '#4B3D3D' }}>
         Let's make cooking easier with the recipe
       </p>

@@ -57,3 +57,4 @@ The application features a clean and modern design with:
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
