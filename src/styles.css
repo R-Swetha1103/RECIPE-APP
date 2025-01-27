@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFE5B4; /* Peach background */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #D9534F;
+    border: 1px solid #C0392B;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #C0392B;
+  }
+  
+  input, select {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  .recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .recipe img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe h3 {
+    font-size: 24px;
+  }
+  
+  .recipe p {
+    font-size: 18px;
+  }
+  
